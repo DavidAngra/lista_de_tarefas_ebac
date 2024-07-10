@@ -1,46 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&family=Roboto:wght@400;700&display=swap"
-         rel="stylesheet"
-      />
-      <link rel="stylesheet" href="style.css" />
-      <title>DESAFIO DIÁRIO - TO DO LIST</title>
-   </head>
-   <body>
-      <main>
-         <div class="formContainer">
-            <header>
-               <img src="img/logo.svg" alt="logo" />
-               <h1>Desafio diário!?</h1>
-            </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>DESAFIO DIÁRIO - TO DO LIST</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div>
+                    <img src="img/logo.svg" alt="logo" />
+                    <h1>Desafio diário!?</h1>
+                </div>
 
-            <form id="form">
-               <input
-                  type="text"
-                  name="taskInput"
-                  id="taskInput"
-                  required
-                  placeholder="Digite o seu desafio..."
-               />
+                <form id="form">
+                    <input
+                        type="text"
+                        name="taskInput"
+                        id="taskInput"
+                        placeholder="Digite o seu desafio..."
+                    />
 
-               <button type="submit">Adicionar desafio</button>
-            </form>
-         </div>
-
-         <div class="taskContainer">
-            <h2>Desafios do dia!</h2>
-            <div class="listContainer">
-               <ul id="taskList"></ul>
+                    <button type="submit">Adicionar desafio</button>
+                </form>
             </div>
-         </div>
-      </main>
-      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-      <script src="main.js"></script>
-   </body>
+        </header>
+
+        <!-- inicio main -->
+        <section>
+            <div class="container">
+                <h2>Desafios do dia!</h2>
+                <div class="listContainer">
+                    <ul id="taskList"></ul>
+                </div>
+            </div>
+        </section>
+        <!-- Final main -->
+
+        <footer>
+            <div class="container">
+                <p>
+                    Desenvolvido por
+                    <a
+                        href="https://github.com/DavidAngra?tab=repositories"
+                        target="_blank"
+                        >David Carvalho \0/</a
+                    >
+                </p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- <script src="main.js"></script> -->
+        <script src="javascriptPuro.js"></script>
+    </body>
 </html>
