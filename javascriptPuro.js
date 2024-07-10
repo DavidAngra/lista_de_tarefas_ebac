@@ -27,7 +27,8 @@ function mostrarTasks() {
     tasks.forEach((item, index) => {
         newLi += `<li class="liItem ${
             item.checked && "checked"
-        }"  onclick="concluirTarefa(${index})">${
+        }"><img src="img/checked.png" alt="checked" onclick = "concluirTarefa(${index})"/>
+        ${
             item.text
         }<img class="closeBtn" src="img/close.png" alt="botao fechar" onclick="deletarItem(${index})"></li>`;
     });
