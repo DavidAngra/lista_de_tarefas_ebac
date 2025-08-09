@@ -1,62 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&family=Roboto:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <title>Desafios Diários</title>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <div>
-                    <!-- <img src="img/logo.svg" alt="logo" /> -->
-                    <h1>DESAFIO DIÁRIO!?</h1>
-                </div>
-
-                <form id="form">
-                    <input
-                        type="text"
-                        name="taskInput"
-                        id="taskInput"
-                        placeholder="Digite o seu desafio..."
-                        required
-                    />
-
-                    <button type="submit">Adicionar</button>
-                </form>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TaskPro</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <h1>TaskPro</h1>
             </div>
-        </header>
 
-        <!-- inicio main -->
-        <section>
-            <div class="container">
-                <!-- <h2>Desafios do dia!</h2> -->
-                <ul id="taskList"></ul>
-            </div>
-        </section>
-        <!-- Final main -->
+            <form id="form">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Digite sua tarefa..."
+                    required
+                />
+                <button type="submit">Adicionar</button>
+            </form>
 
-        <!-- <footer>
-            <div class="container">
-                <p>
-                    Desenvolvido por
-                    <a
-                        href="https://github.com/DavidAngra?tab=repositories"
-                        target="_blank"
-                        >David Carvalho \0/</a
-                    >
-                </p>
-            </div>
-        </footer> -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <!-- <script src="main.js"></script> -->
-        <script src="javascriptPuro.js"></script>
-    </body>
+            <button id="toggleTheme" title="Alternar modo claro/escuro">🌙</button>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <ul id="taskList"></ul>
+        </div>
+    </section>
+
+    <script src="javascriptPuro.js"></script>
+</body>
 </html>
